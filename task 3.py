@@ -1,11 +1,16 @@
 def massiv(start, end):
     mas = []
-    for i in range(start, end+1):
-        if i % 2 != 0:
-            mas.append(i)
+    for num in range(start,end + 1):
+        if num > 1:
+            for i in range(2, num // 2 + 1):
+                if (num % i) == 0:
+                    break
+            else:
+                mas.append(num)
     return mas
 
 start = int(input("Начало: "))
 end = int(input("Конец: "))
-result = massiv(start, end)
-print(result)
+
+print("Простые числа в диапазоне от", start, "до", end, ":")
+print(massiv(start, end))
