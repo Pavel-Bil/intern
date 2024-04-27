@@ -5,7 +5,7 @@ def massiv(start, end):
             mas.append(i)
     return mas
 
-start = int(input("начало"))
-end = int(input("конец"))
+start = int(input("Начало: "))
+end = int(input("Конец: "))
 result = massiv(start, end)
 print(result)

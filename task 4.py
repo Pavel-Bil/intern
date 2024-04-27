@@ -4,6 +4,5 @@ def ymnozenie(num):
             print(f"{i * j}", end=" ")
         print()
 
-
-num = int(input("Введите число:"))
+num = int(input("Введите число: "))
 ymnozenie(num)

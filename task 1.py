@@ -1,7 +1,6 @@
 def count_computers(num):
     digits = list(map(int, str(num)))
     d = digits[-1]
-    i = [2, 3, 4]
     if d == 1:
         print(f"{num} компьютер")
     elif d in (2, 3, 4):
